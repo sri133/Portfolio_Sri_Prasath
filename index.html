@@ -579,6 +579,21 @@ footer span:nth-child(2){font-family:'Playfair Display',Georgia,serif;font-style
 .rp-card span{font-size:.86rem;color:var(--muted)}
 .rp-note{max-width:64ch;color:var(--muted);font-size:.95rem}
 body.motion-paused .rp-card b{animation-play-state:paused}
+
+/* certificate images */
+.cert-img{display:block;margin:0 0 16px;border:1px solid rgba(26,17,19,.25);border-radius:2px;overflow:hidden;transform:translateZ(16px)}
+.cert-img img{display:block;width:100%;height:auto}
+
+/* community gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.shot{margin:0;min-width:0;background:#FFFDFB;border:2px solid var(--ink);border-radius:4px;box-shadow:6px 6px 0 var(--ink);padding:10px 10px 12px;color:#1A1113;
+  transform:rotate(var(--tilt,0deg));transition:transform .25s ease,box-shadow .25s ease}
+.shot:nth-child(odd){--tilt:-1.4deg}
+.shot:nth-child(even){--tilt:1.2deg}
+.shot:hover{transform:rotate(0deg) translateY(-4px);box-shadow:9px 9px 0 var(--ink)}
+.shot a{display:block}
+.shot img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border:1px solid rgba(26,17,19,.25)}
+.shot figcaption{font-family:'Special Elite','Courier New',monospace;font-size:.78rem;letter-spacing:.04em;margin-top:10px;color:#4a3b3e}
 </style>
 
 <script>document.documentElement.classList.add('js')</script>
@@ -776,6 +791,25 @@ body.motion-paused .rp-card b{animation-play-state:paused}
         <a class="btn btn-primary impact-btn" href="https://joe-andrea-illam.onrender.com/" target="_blank" rel="noopener">Visit the Illam's website →</a>
       </div>
     </div>
+    <p class="label-row">Moments from the Illam</p>
+    <div class="gallery">
+      <figure class="shot">
+        <a href="assets/g1.jpg" target="_blank" rel="noopener"><img src="assets/g1.jpg" alt="Speaking to the children and guests at Cheer Up Day at the Illam" loading="lazy"></a>
+        <figcaption>Cheer Up Day at the Illam</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="assets/g2.jpg" target="_blank" rel="noopener"><img src="assets/g2.jpg" alt="Showing our work on a laptop to the guests at Cheer Up Day" loading="lazy"></a>
+        <figcaption>Showing our work to the guests</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="assets/g3.jpg" target="_blank" rel="noopener"><img src="assets/g3.jpg" alt="Group photo with the children holding their certificates on Cheer Up Day" loading="lazy"></a>
+        <figcaption>Cheer Up Day group photo with certificates</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="assets/g4.jpg" target="_blank" rel="noopener"><img src="assets/g4.jpg" alt="Teaching an English class on action words to the children" loading="lazy"></a>
+        <figcaption>English class: action words</figcaption>
+      </figure>
+    </div>
   </div></section></div>
 
   <section id="pps" class="section reveal"><div class="inner">
@@ -788,11 +822,17 @@ body.motion-paused .rp-card b{animation-play-state:paused}
       <div class="cert-card">
         <span class="stamp">Verified</span>
         <h3>Communication Skills Course</h3>
+        <a class="cert-img" href="certificates/certificate1.jpg" target="_blank" rel="noopener">
+          <img src="certificates/certificate1.jpg" alt="Communication Skills Course certificate, Simplilearn SkillUP, 19 Dec 2025" loading="lazy">
+        </a>
         <div class="cert-meta"><span>Issued <b>19 Dec 2025</b></span><span class="mono">#9608303</span></div>
       </div>
       <div class="cert-card">
         <span class="stamp">Verified</span>
         <h3>Introduction to Responsible AI</h3>
+        <a class="cert-img" href="certificates/certificate2.jpg" target="_blank" rel="noopener">
+          <img src="certificates/certificate2.jpg" alt="Introduction to Responsible AI certificate, Simplilearn SkillUP, 20 Mar 2026" loading="lazy">
+        </a>
         <div class="cert-meta"><span>Issued <b>20 Mar 2026</b></span><span class="mono">#9975328</span></div>
       </div>
     </div>
